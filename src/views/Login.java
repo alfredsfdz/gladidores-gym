@@ -2,7 +2,6 @@ package views;
 
 public class Login extends javax.swing.JFrame {
 
-    int xMouse, yMouse;
     public Login() {
         initComponents();
     }
@@ -12,36 +11,19 @@ public class Login extends javax.swing.JFrame {
     private void initComponents() {
 
         paneBg = new javax.swing.JPanel();
-        lblClose = new javax.swing.JLabel();
-        lblMin = new javax.swing.JLabel();
         lblIniciar = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         txtContrasena = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
+        btnEntrar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         paneScratch = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
-        setUndecorated(true);
         setResizable(false);
 
         paneBg.setBackground(new java.awt.Color(29, 29, 29));
         paneBg.setLayout(null);
-
-        lblClose.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
-        lblClose.setForeground(new java.awt.Color(255, 255, 255));
-        lblClose.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblClose.setText("X");
-        paneBg.add(lblClose);
-        lblClose.setBounds(760, 0, 40, 40);
-
-        lblMin.setFont(new java.awt.Font("Roboto Black", 1, 30)); // NOI18N
-        lblMin.setForeground(new java.awt.Color(255, 255, 255));
-        lblMin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblMin.setText("-");
-        paneBg.add(lblMin);
-        lblMin.setBounds(720, 0, 40, 40);
 
         lblIniciar.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
         lblIniciar.setForeground(new java.awt.Color(255, 255, 255));
@@ -56,20 +38,20 @@ public class Login extends javax.swing.JFrame {
         txtUsuario.setForeground(new java.awt.Color(51, 51, 51));
         txtUsuario.setText("Usuario");
         paneBg.add(txtUsuario);
-        txtUsuario.setBounds(220, 320, 360, 30);
+        txtUsuario.setBounds(210, 320, 360, 30);
 
         txtContrasena.setBackground(new java.awt.Color(229, 229, 229));
         txtContrasena.setForeground(new java.awt.Color(51, 51, 51));
         txtContrasena.setText("Contraseña");
         paneBg.add(txtContrasena);
-        txtContrasena.setBounds(220, 360, 360, 30);
+        txtContrasena.setBounds(210, 360, 360, 30);
 
-        jButton1.setBackground(new java.awt.Color(0, 0, 0));
-        jButton1.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("ENTRAR");
-        paneBg.add(jButton1);
-        jButton1.setBounds(340, 400, 120, 30);
+        btnEntrar.setBackground(new java.awt.Color(0, 0, 0));
+        btnEntrar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEntrar.setText("ENTRAR");
+        paneBg.add(btnEntrar);
+        btnEntrar.setBounds(330, 400, 120, 30);
 
         lblLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gladiadores_logo.png"))); // NOI18N
@@ -135,11 +117,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel lblClose;
+    private javax.swing.JButton btnEntrar;
     private javax.swing.JLabel lblIniciar;
     private javax.swing.JLabel lblLogo;
-    private javax.swing.JLabel lblMin;
     private javax.swing.JPanel paneBg;
     private javax.swing.JLabel paneScratch;
     private javax.swing.JPasswordField txtContrasena;
