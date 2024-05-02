@@ -27,34 +27,33 @@ public class Foto extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        miAgMiembro = new javax.swing.JButton();
-        paneFoto = new javax.swing.JPanel();
+        btnCapturar = new javax.swing.JButton();
+        paneCaptura = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        miAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
-        miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
-        miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
-        miAgMiembro.setText("Capturar");
-        getContentPane().add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, 500, 70));
+        btnCapturar.setBackground(new java.awt.Color(0, 0, 0));
+        btnCapturar.setFont(new java.awt.Font("Roboto", 1, 24)); // NOI18N
+        btnCapturar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCapturar.setText("Capturar");
+        getContentPane().add(btnCapturar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 500, 500, 70));
 
-        paneFoto.setBackground(new java.awt.Color(204, 204, 204));
-
-        javax.swing.GroupLayout paneFotoLayout = new javax.swing.GroupLayout(paneFoto);
-        paneFoto.setLayout(paneFotoLayout);
-        paneFotoLayout.setHorizontalGroup(
-            paneFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout paneCapturaLayout = new javax.swing.GroupLayout(paneCaptura);
+        paneCaptura.setLayout(paneCapturaLayout);
+        paneCapturaLayout.setHorizontalGroup(
+            paneCapturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 500, Short.MAX_VALUE)
         );
-        paneFotoLayout.setVerticalGroup(
-            paneFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        paneCapturaLayout.setVerticalGroup(
+            paneCapturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 500, Short.MAX_VALUE)
         );
 
-        getContentPane().add(paneFoto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(paneCaptura, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -93,7 +92,7 @@ public class Foto extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton miAgMiembro;
-    private javax.swing.JPanel paneFoto;
+    private javax.swing.JButton btnCapturar;
+    private javax.swing.JPanel paneCaptura;
     // End of variables declaration//GEN-END:variables
 }
