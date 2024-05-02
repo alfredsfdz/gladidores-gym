@@ -17,6 +17,7 @@ public class Login extends javax.swing.JFrame {
         btnEntrar = new javax.swing.JButton();
         lblLogo = new javax.swing.JLabel();
         paneScratch = new javax.swing.JLabel();
+        lblScratch = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -47,7 +48,7 @@ public class Login extends javax.swing.JFrame {
         txtContrasena.setBounds(210, 360, 360, 30);
 
         btnEntrar.setBackground(new java.awt.Color(0, 0, 0));
-        btnEntrar.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        btnEntrar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
         btnEntrar.setText("ENTRAR");
         paneBg.add(btnEntrar);
@@ -62,7 +63,11 @@ public class Login extends javax.swing.JFrame {
         paneScratch.setForeground(new java.awt.Color(255, 255, 255));
         paneScratch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratch.png"))); // NOI18N
         paneBg.add(paneScratch);
-        paneScratch.setBounds(0, 0, 800, 500);
+        paneScratch.setBounds(0, 0, 0, 0);
+
+        lblScratch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratch.png"))); // NOI18N
+        paneBg.add(lblScratch);
+        lblScratch.setBounds(0, 0, 800, 500);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -120,6 +125,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JButton btnEntrar;
     private javax.swing.JLabel lblIniciar;
     private javax.swing.JLabel lblLogo;
+    private javax.swing.JLabel lblScratch;
     private javax.swing.JPanel paneBg;
     private javax.swing.JLabel paneScratch;
     private javax.swing.JPasswordField txtContrasena;

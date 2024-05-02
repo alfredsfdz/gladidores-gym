@@ -4,8 +4,6 @@
  */
 package views;
 
-import javax.swing.JFrame;
-
 /**
  *
  * @author alfre
@@ -16,8 +14,7 @@ public class Home extends javax.swing.JFrame {
      * Creates new form Home
      */
     public Home() {
-        initComponents();
-        setExtendedState(JFrame.MAXIMIZED_BOTH);     
+        initComponents(); 
     }
 
     /**
@@ -31,61 +28,150 @@ public class Home extends javax.swing.JFrame {
 
         paneBgHome = new javax.swing.JPanel();
         paneBotones = new javax.swing.JPanel();
+        miAgMiembro = new javax.swing.JButton();
+        miMiembros = new javax.swing.JButton();
+        miRegistro = new javax.swing.JButton();
+        miMembresias = new javax.swing.JButton();
+        miReportes = new javax.swing.JButton();
         btnAgMiembro = new javax.swing.JButton();
+        lblAgMiembro = new javax.swing.JLabel();
         btnMiembros = new javax.swing.JButton();
+        lblMiembros = new javax.swing.JLabel();
         btnRegistro = new javax.swing.JButton();
+        lblRegistro = new javax.swing.JLabel();
         btnMembresias = new javax.swing.JButton();
+        lblMembresias = new javax.swing.JLabel();
         btnReportes = new javax.swing.JButton();
+        lblReportes = new javax.swing.JLabel();
+        btnReportes1 = new javax.swing.JButton();
+        lblInformacion = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocationByPlatform(true);
+        setResizable(false);
 
         paneBgHome.setBackground(new java.awt.Color(29, 29, 29));
-        paneBgHome.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        paneBgHome.setLayout(null);
 
         paneBotones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAgMiembro.setText("Agregar miembro");
-        paneBotones.add(btnAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 30));
+        miAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
+        miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
+        miAgMiembro.setText("Agregar miembro");
+        paneBotones.add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 30));
 
-        btnMiembros.setText("Miembros");
-        btnMiembros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMiembrosActionPerformed(evt);
-            }
-        });
-        paneBotones.add(btnMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 256, 30));
+        miMiembros.setBackground(new java.awt.Color(0, 0, 0));
+        miMiembros.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMiembros.setForeground(new java.awt.Color(255, 255, 255));
+        miMiembros.setText("Miembros");
+        paneBotones.add(miMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 256, 30));
 
-        btnRegistro.setText("Registro QR");
-        btnRegistro.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegistroActionPerformed(evt);
-            }
-        });
-        paneBotones.add(btnRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(512, 0, 256, 30));
+        miRegistro.setBackground(new java.awt.Color(0, 0, 0));
+        miRegistro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        miRegistro.setText("Registro QR");
+        paneBotones.add(miRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(512, 0, 256, 30));
 
-        btnMembresias.setText("Membresias");
-        btnMembresias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMembresiasActionPerformed(evt);
-            }
-        });
-        paneBotones.add(btnMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 0, 256, 30));
+        miMembresias.setBackground(new java.awt.Color(0, 0, 0));
+        miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMembresias.setForeground(new java.awt.Color(255, 255, 255));
+        miMembresias.setText("Membresias");
+        paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 0, 256, 30));
 
-        btnReportes.setText("Reportes");
-        btnReportes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReportesActionPerformed(evt);
-            }
-        });
-        paneBotones.add(btnReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1024, 0, 256, 30));
+        miReportes.setBackground(new java.awt.Color(0, 0, 0));
+        miReportes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miReportes.setForeground(new java.awt.Color(255, 255, 255));
+        miReportes.setText("Reportes");
+        paneBotones.add(miReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1024, 0, 256, 30));
 
-        paneBgHome.add(paneBotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 30));
+        paneBgHome.add(paneBotones);
+        paneBotones.setBounds(0, 0, 1280, 30);
+
+        btnAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgMiembro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/add_icon.png"))); // NOI18N
+        paneBgHome.add(btnAgMiembro);
+        btnAgMiembro.setBounds(120, 143, 260, 180);
+
+        lblAgMiembro.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
+        lblAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
+        lblAgMiembro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAgMiembro.setText("Agregar miembro");
+        paneBgHome.add(lblAgMiembro);
+        lblAgMiembro.setBounds(120, 329, 260, 24);
+
+        btnMiembros.setBackground(new java.awt.Color(0, 0, 0));
+        btnMiembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/miembros_icon.png"))); // NOI18N
+        paneBgHome.add(btnMiembros);
+        btnMiembros.setBounds(510, 143, 260, 180);
+
+        lblMiembros.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
+        lblMiembros.setForeground(new java.awt.Color(255, 255, 255));
+        lblMiembros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMiembros.setText("Miembros");
+        paneBgHome.add(lblMiembros);
+        lblMiembros.setBounds(510, 329, 260, 24);
+
+        btnRegistro.setBackground(new java.awt.Color(0, 0, 0));
+        btnRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/qr_icon.png"))); // NOI18N
+        paneBgHome.add(btnRegistro);
+        btnRegistro.setBounds(900, 143, 260, 180);
+
+        lblRegistro.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
+        lblRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        lblRegistro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblRegistro.setText("Registro");
+        paneBgHome.add(lblRegistro);
+        lblRegistro.setBounds(900, 329, 260, 24);
+
+        btnMembresias.setBackground(new java.awt.Color(0, 0, 0));
+        btnMembresias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/memb_icon.png"))); // NOI18N
+        paneBgHome.add(btnMembresias);
+        btnMembresias.setBounds(315, 396, 260, 180);
+
+        lblMembresias.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
+        lblMembresias.setForeground(new java.awt.Color(255, 255, 255));
+        lblMembresias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMembresias.setText("Membresias");
+        paneBgHome.add(lblMembresias);
+        lblMembresias.setBounds(315, 582, 260, 24);
+
+        btnReportes.setBackground(new java.awt.Color(0, 0, 0));
+        btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/reporte_icon.png"))); // NOI18N
+        paneBgHome.add(btnReportes);
+        btnReportes.setBounds(705, 396, 260, 180);
+
+        lblReportes.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
+        lblReportes.setForeground(new java.awt.Color(255, 255, 255));
+        lblReportes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblReportes.setText("Reportes");
+        paneBgHome.add(lblReportes);
+        lblReportes.setBounds(705, 582, 260, 24);
+
+        btnReportes1.setBackground(new java.awt.Color(0, 0, 0));
+        btnReportes1.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
+        btnReportes1.setForeground(new java.awt.Color(255, 255, 255));
+        btnReportes1.setText("?");
+        paneBgHome.add(btnReportes1);
+        btnReportes1.setBounds(1145, 560, 100, 100);
+
+        lblInformacion.setFont(new java.awt.Font("Roboto Black", 1, 16)); // NOI18N
+        lblInformacion.setForeground(new java.awt.Color(255, 255, 255));
+        lblInformacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblInformacion.setText("Información");
+        paneBgHome.add(lblInformacion);
+        lblInformacion.setBounds(1145, 666, 100, 19);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchrev.png"))); // NOI18N
+        paneBgHome.add(jLabel1);
+        jLabel1.setBounds(0, 30, 1280, 690);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(paneBgHome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(paneBgHome, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,23 +179,8 @@ public class Home extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnReportesActionPerformed
-
-    private void btnMiembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMiembrosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnMiembrosActionPerformed
-
-    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnRegistroActionPerformed
-
-    private void btnMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMembresiasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnMembresiasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,6 +223,19 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnMiembros;
     private javax.swing.JButton btnRegistro;
     private javax.swing.JButton btnReportes;
+    private javax.swing.JButton btnReportes1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblAgMiembro;
+    private javax.swing.JLabel lblInformacion;
+    private javax.swing.JLabel lblMembresias;
+    private javax.swing.JLabel lblMiembros;
+    private javax.swing.JLabel lblRegistro;
+    private javax.swing.JLabel lblReportes;
+    private javax.swing.JButton miAgMiembro;
+    private javax.swing.JButton miMembresias;
+    private javax.swing.JButton miMiembros;
+    private javax.swing.JButton miRegistro;
+    private javax.swing.JButton miReportes;
     private javax.swing.JPanel paneBgHome;
     private javax.swing.JPanel paneBotones;
     // End of variables declaration//GEN-END:variables
