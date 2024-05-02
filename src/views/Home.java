@@ -6,15 +6,16 @@ package views;
 
 /**
  *
- * @author alfre
+ * @author Alfred-PC
  */
 public class Home extends javax.swing.JFrame {
 
     /**
-     * Creates new form Home
+     * Creates new form NewJFrame
      */
     public Home() {
-        initComponents(); 
+        initComponents();
+        setTitle("Home");
     }
 
     /**
@@ -43,13 +44,10 @@ public class Home extends javax.swing.JFrame {
         lblMembresias = new javax.swing.JLabel();
         btnReportes = new javax.swing.JButton();
         lblReportes = new javax.swing.JLabel();
-        btnReportes1 = new javax.swing.JButton();
+        btnInformacion = new javax.swing.JButton();
         lblInformacion = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
-        setResizable(false);
 
         paneBgHome.setBackground(new java.awt.Color(29, 29, 29));
         paneBgHome.setLayout(null);
@@ -149,12 +147,12 @@ public class Home extends javax.swing.JFrame {
         paneBgHome.add(lblReportes);
         lblReportes.setBounds(705, 582, 260, 24);
 
-        btnReportes1.setBackground(new java.awt.Color(0, 0, 0));
-        btnReportes1.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
-        btnReportes1.setForeground(new java.awt.Color(255, 255, 255));
-        btnReportes1.setText("?");
-        paneBgHome.add(btnReportes1);
-        btnReportes1.setBounds(1145, 560, 100, 100);
+        btnInformacion.setBackground(new java.awt.Color(0, 0, 0));
+        btnInformacion.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
+        btnInformacion.setForeground(new java.awt.Color(255, 255, 255));
+        btnInformacion.setText("?");
+        paneBgHome.add(btnInformacion);
+        btnInformacion.setBounds(1145, 560, 100, 100);
 
         lblInformacion.setFont(new java.awt.Font("Roboto Black", 1, 16)); // NOI18N
         lblInformacion.setForeground(new java.awt.Color(255, 255, 255));
@@ -162,10 +160,6 @@ public class Home extends javax.swing.JFrame {
         lblInformacion.setText("Información");
         paneBgHome.add(lblInformacion);
         lblInformacion.setBounds(1145, 666, 100, 19);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchrev.png"))); // NOI18N
-        paneBgHome.add(jLabel1);
-        jLabel1.setBounds(0, 30, 1280, 690);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -179,7 +173,6 @@ public class Home extends javax.swing.JFrame {
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -208,6 +201,7 @@ public class Home extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Home.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -219,12 +213,11 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgMiembro;
+    private javax.swing.JButton btnInformacion;
     private javax.swing.JButton btnMembresias;
     private javax.swing.JButton btnMiembros;
     private javax.swing.JButton btnRegistro;
     private javax.swing.JButton btnReportes;
-    private javax.swing.JButton btnReportes1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblAgMiembro;
     private javax.swing.JLabel lblInformacion;
     private javax.swing.JLabel lblMembresias;
