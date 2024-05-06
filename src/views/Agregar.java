@@ -50,6 +50,7 @@ public class Agregar extends javax.swing.JFrame {
         btnAgregar = new javax.swing.JButton();
         btnTomar = new javax.swing.JButton();
         btnElegir = new javax.swing.JButton();
+        lblScratchAgregar = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -187,6 +188,10 @@ public class Agregar extends javax.swing.JFrame {
         paneBgHome.add(btnElegir);
         btnElegir.setBounds(590, 330, 120, 30);
 
+        lblScratchAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgHome.add(lblScratchAgregar);
+        lblScratchAgregar.setBounds(0, 30, 800, 420);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -250,6 +255,7 @@ public class Agregar extends javax.swing.JFrame {
     private javax.swing.JLabel lblIDMiem;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNumero;
+    private javax.swing.JLabel lblScratchAgregar;
     private javax.swing.JButton miAgMiembro;
     private javax.swing.JButton miMembresias;
     private javax.swing.JButton miMiembros;

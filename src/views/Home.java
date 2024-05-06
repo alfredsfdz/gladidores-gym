@@ -46,6 +46,7 @@ public class Home extends javax.swing.JFrame {
         lblReportes = new javax.swing.JLabel();
         btnInformacion = new javax.swing.JButton();
         lblInformacion = new javax.swing.JLabel();
+        lblScratchHome = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,6 +162,10 @@ public class Home extends javax.swing.JFrame {
         paneBgHome.add(lblInformacion);
         lblInformacion.setBounds(1145, 666, 100, 19);
 
+        lblScratchHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgHome.add(lblScratchHome);
+        lblScratchHome.setBounds(0, 30, 1280, 690);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -224,6 +229,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblMiembros;
     private javax.swing.JLabel lblRegistro;
     private javax.swing.JLabel lblReportes;
+    private javax.swing.JLabel lblScratchHome;
     private javax.swing.JButton miAgMiembro;
     private javax.swing.JButton miMembresias;
     private javax.swing.JButton miMiembros;

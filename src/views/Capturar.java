@@ -15,6 +15,7 @@ public class Capturar extends javax.swing.JFrame {
      */
     public Capturar() {
         initComponents();
+        setTitle("Tomar foto");
     }
 
     /**
