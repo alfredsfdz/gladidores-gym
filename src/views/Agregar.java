@@ -16,6 +16,8 @@ public class Agregar extends javax.swing.JFrame {
     public Agregar() {
         initComponents();
         setTitle("Agregar miembro");
+        setDefaultCloseOperation(Agregar.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -35,17 +37,16 @@ public class Agregar extends javax.swing.JFrame {
         miMembresias = new javax.swing.JButton();
         miReportes = new javax.swing.JButton();
         paneFoto = new javax.swing.JPanel();
+        lblFoto = new javax.swing.JLabel();
         lblBack = new javax.swing.JLabel();
-        lblIDMiem = new javax.swing.JLabel();
-        lblID1 = new javax.swing.JLabel();
         lblNombre = new javax.swing.JLabel();
         txtNombres = new javax.swing.JTextField();
         lblApellidos = new javax.swing.JLabel();
         txtApellidos = new javax.swing.JTextField();
-        lblApellidos1 = new javax.swing.JLabel();
-        txtNumero = new javax.swing.JTextField();
         lblNumero = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        txtNumero = new javax.swing.JTextField();
+        lblNac = new javax.swing.JLabel();
+        dateNac = new com.toedter.calendar.JDateChooser();
         btnLimpiar = new javax.swing.JButton();
         btnAgregar = new javax.swing.JButton();
         btnTomar = new javax.swing.JButton();
@@ -96,69 +97,62 @@ public class Agregar extends javax.swing.JFrame {
         paneFoto.setLayout(paneFotoLayout);
         paneFotoLayout.setHorizontalGroup(
             paneFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addComponent(lblFoto, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
         paneFotoLayout.setVerticalGroup(
             paneFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addComponent(lblFoto, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
 
         paneBgHome.add(paneFoto);
         paneFoto.setBounds(460, 70, 250, 250);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon.png"))); // NOI18N
+        lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBackMouseClicked(evt);
+            }
+        });
         paneBgHome.add(lblBack);
         lblBack.setBounds(30, 52, 35, 35);
-
-        lblIDMiem.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        lblIDMiem.setForeground(new java.awt.Color(255, 255, 255));
-        lblIDMiem.setText("-");
-        paneBgHome.add(lblIDMiem);
-        lblIDMiem.setBounds(120, 70, 270, 22);
-
-        lblID1.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
-        lblID1.setForeground(new java.awt.Color(255, 255, 255));
-        lblID1.setText("ID:");
-        paneBgHome.add(lblID1);
-        lblID1.setBounds(90, 70, 24, 22);
 
         lblNombre.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Nombre");
         paneBgHome.add(lblNombre);
-        lblNombre.setBounds(90, 100, 70, 17);
+        lblNombre.setBounds(90, 70, 70, 17);
 
         txtNombres.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paneBgHome.add(txtNombres);
-        txtNombres.setBounds(90, 120, 300, 30);
+        txtNombres.setBounds(90, 90, 300, 30);
 
         lblApellidos.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblApellidos.setForeground(new java.awt.Color(255, 255, 255));
         lblApellidos.setText("Apellidos");
         paneBgHome.add(lblApellidos);
-        lblApellidos.setBounds(90, 160, 70, 17);
+        lblApellidos.setBounds(90, 130, 70, 17);
 
         txtApellidos.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paneBgHome.add(txtApellidos);
-        txtApellidos.setBounds(90, 180, 300, 30);
-
-        lblApellidos1.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
-        lblApellidos1.setForeground(new java.awt.Color(255, 255, 255));
-        lblApellidos1.setText("Fecha de nacimiento");
-        paneBgHome.add(lblApellidos1);
-        lblApellidos1.setBounds(90, 280, 140, 17);
-
-        txtNumero.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        paneBgHome.add(txtNumero);
-        txtNumero.setBounds(90, 240, 300, 30);
+        txtApellidos.setBounds(90, 150, 300, 30);
 
         lblNumero.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblNumero.setForeground(new java.awt.Color(255, 255, 255));
         lblNumero.setText("Número de teléfono");
         paneBgHome.add(lblNumero);
-        lblNumero.setBounds(90, 220, 140, 17);
-        paneBgHome.add(jDateChooser1);
-        jDateChooser1.setBounds(90, 300, 110, 30);
+        lblNumero.setBounds(90, 190, 140, 17);
+
+        txtNumero.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        paneBgHome.add(txtNumero);
+        txtNumero.setBounds(90, 210, 300, 30);
+
+        lblNac.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        lblNac.setForeground(new java.awt.Color(255, 255, 255));
+        lblNac.setText("Fecha de nacimiento");
+        paneBgHome.add(lblNac);
+        lblNac.setBounds(90, 250, 140, 17);
+        paneBgHome.add(dateNac);
+        dateNac.setBounds(90, 270, 110, 30);
 
         btnLimpiar.setBackground(new java.awt.Color(0, 0, 0));
         btnLimpiar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
@@ -207,6 +201,10 @@ public class Agregar extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
+        this.dispose();
+    }//GEN-LAST:event_lblBackMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -247,12 +245,11 @@ public class Agregar extends javax.swing.JFrame {
     private javax.swing.JButton btnElegir;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnTomar;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser dateNac;
     private javax.swing.JLabel lblApellidos;
-    private javax.swing.JLabel lblApellidos1;
     private javax.swing.JLabel lblBack;
-    private javax.swing.JLabel lblID1;
-    private javax.swing.JLabel lblIDMiem;
+    private javax.swing.JLabel lblFoto;
+    private javax.swing.JLabel lblNac;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNumero;
     private javax.swing.JLabel lblScratchAgregar;

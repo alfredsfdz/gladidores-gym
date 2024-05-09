@@ -1,10 +1,26 @@
 package views;
 
+import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 public class Login extends javax.swing.JFrame {
+
+    private Map<String, String> usuarios;
 
     public Login() {
         initComponents();
         setTitle("Login");
+        setDefaultCloseOperation(Home.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        usuarios = new HashMap<>();
+        usuarios.put("admin", "admin123");
+        usuarios.put("operador", "operador123");
     }
 
     @SuppressWarnings("unchecked")
@@ -34,17 +50,31 @@ public class Login extends javax.swing.JFrame {
         paneBg.add(lblIniciar);
         lblIniciar.setBounds(0, 290, 800, 22);
 
-        txtUsuario.setEditable(false);
         txtUsuario.setBackground(new java.awt.Color(229, 229, 229));
         txtUsuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(51, 51, 51));
         txtUsuario.setText("Usuario");
+        txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtUsuarioMouseClicked(evt);
+            }
+        });
         paneBg.add(txtUsuario);
         txtUsuario.setBounds(210, 320, 360, 30);
 
         txtContrasena.setBackground(new java.awt.Color(229, 229, 229));
         txtContrasena.setForeground(new java.awt.Color(51, 51, 51));
         txtContrasena.setText("Contraseña");
+        txtContrasena.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtContrasenaMouseClicked(evt);
+            }
+        });
+        txtContrasena.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtContrasenaKeyPressed(evt);
+            }
+        });
         paneBg.add(txtContrasena);
         txtContrasena.setBounds(210, 360, 360, 30);
 
@@ -52,6 +82,11 @@ public class Login extends javax.swing.JFrame {
         btnEntrar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
         btnEntrar.setText("ENTRAR");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
         paneBg.add(btnEntrar);
         btnEntrar.setBounds(330, 400, 120, 30);
 
@@ -64,7 +99,7 @@ public class Login extends javax.swing.JFrame {
         paneScratch.setForeground(new java.awt.Color(255, 255, 255));
         paneScratch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratch.png"))); // NOI18N
         paneBg.add(paneScratch);
-        paneScratch.setBounds(0, 0, 0, 0);
+        paneScratch.setBounds(0, 0, 800, 500);
 
         lblScratch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratch.png"))); // NOI18N
         paneBg.add(lblScratch);
@@ -83,6 +118,52 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        String usuario = txtUsuario.getText();
+        String contrasena = new String(txtContrasena.getPassword());
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        if (validarUsuario(usuario, contrasena)) {
+            JOptionPane.showMessageDialog(null, "Inicio de sesión exitoso.");
+            Home ventanaHome = new Home();
+            this.dispose();
+            ventanaHome.setVisible(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "Inicio de sesión fallido, intentelo de nuevo.");
+        }
+    }//GEN-LAST:event_btnEntrarActionPerformed
+
+    private void txtContrasenaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtContrasenaMouseClicked
+        txtContrasena.setText(null);
+    }//GEN-LAST:event_txtContrasenaMouseClicked
+
+    private void txtUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMouseClicked
+        txtUsuario.setText(null);
+    }//GEN-LAST:event_txtUsuarioMouseClicked
+
+    private void txtContrasenaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtContrasenaKeyPressed
+        if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            String usuario = txtUsuario.getText();
+            String contrasena = new String(txtContrasena.getPassword());
+            try {
+                UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+                Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if (validarUsuario(usuario, contrasena)) {
+                JOptionPane.showMessageDialog(null, "Inicio de sesión exitoso.");
+                Home ventanaHome = new Home();
+                this.dispose();
+                ventanaHome.setVisible(true);
+            } else {
+                JOptionPane.showMessageDialog(null, "Inicio de sesión fallido, intentelo de nuevo.");
+            }
+        }
+    }//GEN-LAST:event_txtContrasenaKeyPressed
 
     /**
      * @param args the command line arguments
@@ -120,6 +201,11 @@ public class Login extends javax.swing.JFrame {
                 new Login().setVisible(true);
             }
         });
+    }
+
+    private boolean validarUsuario(String usuario, String contrasena) {
+        String contrasenaGuardada = usuarios.get(usuario);
+        return contrasenaGuardada != null && contrasenaGuardada.equals(contrasena);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

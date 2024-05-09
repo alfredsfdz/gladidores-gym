@@ -4,6 +4,12 @@
  */
 package views;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
 /**
  *
  * @author Alfred-PC
@@ -16,6 +22,8 @@ public class Home extends javax.swing.JFrame {
     public Home() {
         initComponents();
         setTitle("Home");
+        setDefaultCloseOperation(Home.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -49,6 +57,11 @@ public class Home extends javax.swing.JFrame {
         lblScratchHome = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         paneBgHome.setBackground(new java.awt.Color(29, 29, 29));
         paneBgHome.setLayout(null);
@@ -59,30 +72,55 @@ public class Home extends javax.swing.JFrame {
         miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
         miAgMiembro.setText("Agregar miembro");
+        miAgMiembro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miAgMiembroActionPerformed(evt);
+            }
+        });
         paneBotones.add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 30));
 
         miMiembros.setBackground(new java.awt.Color(0, 0, 0));
         miMiembros.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMiembros.setForeground(new java.awt.Color(255, 255, 255));
         miMiembros.setText("Miembros");
+        miMiembros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMiembrosActionPerformed(evt);
+            }
+        });
         paneBotones.add(miMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 256, 30));
 
         miRegistro.setBackground(new java.awt.Color(0, 0, 0));
         miRegistro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miRegistro.setForeground(new java.awt.Color(255, 255, 255));
-        miRegistro.setText("Registro QR");
+        miRegistro.setText("Registro");
+        miRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miRegistroActionPerformed(evt);
+            }
+        });
         paneBotones.add(miRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(512, 0, 256, 30));
 
         miMembresias.setBackground(new java.awt.Color(0, 0, 0));
         miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMembresias.setForeground(new java.awt.Color(255, 255, 255));
         miMembresias.setText("Membresias");
+        miMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMembresiasActionPerformed(evt);
+            }
+        });
         paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 0, 256, 30));
 
         miReportes.setBackground(new java.awt.Color(0, 0, 0));
         miReportes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miReportes.setForeground(new java.awt.Color(255, 255, 255));
         miReportes.setText("Reportes");
+        miReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miReportesActionPerformed(evt);
+            }
+        });
         paneBotones.add(miReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1024, 0, 256, 30));
 
         paneBgHome.add(paneBotones);
@@ -90,6 +128,11 @@ public class Home extends javax.swing.JFrame {
 
         btnAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
         btnAgMiembro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/add_icon.png"))); // NOI18N
+        btnAgMiembro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAgMiembroActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnAgMiembro);
         btnAgMiembro.setBounds(120, 143, 260, 180);
 
@@ -102,6 +145,11 @@ public class Home extends javax.swing.JFrame {
 
         btnMiembros.setBackground(new java.awt.Color(0, 0, 0));
         btnMiembros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/miembros_icon.png"))); // NOI18N
+        btnMiembros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMiembrosActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnMiembros);
         btnMiembros.setBounds(510, 143, 260, 180);
 
@@ -114,6 +162,11 @@ public class Home extends javax.swing.JFrame {
 
         btnRegistro.setBackground(new java.awt.Color(0, 0, 0));
         btnRegistro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/qr_icon.png"))); // NOI18N
+        btnRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegistroActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnRegistro);
         btnRegistro.setBounds(900, 143, 260, 180);
 
@@ -126,6 +179,11 @@ public class Home extends javax.swing.JFrame {
 
         btnMembresias.setBackground(new java.awt.Color(0, 0, 0));
         btnMembresias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/memb_icon.png"))); // NOI18N
+        btnMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMembresiasActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnMembresias);
         btnMembresias.setBounds(315, 396, 260, 180);
 
@@ -138,6 +196,11 @@ public class Home extends javax.swing.JFrame {
 
         btnReportes.setBackground(new java.awt.Color(0, 0, 0));
         btnReportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/reporte_icon.png"))); // NOI18N
+        btnReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReportesActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnReportes);
         btnReportes.setBounds(705, 396, 260, 180);
 
@@ -178,7 +241,72 @@ public class Home extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        confirmarCierreVentana();
+    }//GEN-LAST:event_formWindowClosing
+
+    private void miAgMiembroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAgMiembroActionPerformed
+        this.setVisible(true);
+        Agregar ventanaAgregar = new Agregar();
+        ventanaAgregar.setVisible(true);
+    }//GEN-LAST:event_miAgMiembroActionPerformed
+
+    private void miMiembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMiembrosActionPerformed
+        this.setVisible(true);
+        Miembros ventanaMiembros = new Miembros();
+        ventanaMiembros.setVisible(true);
+    }//GEN-LAST:event_miMiembrosActionPerformed
+
+    private void miRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miRegistroActionPerformed
+        this.setVisible(true);
+        Registro ventanaRegistro = new Registro();
+        ventanaRegistro.setVisible(true);
+    }//GEN-LAST:event_miRegistroActionPerformed
+
+    private void miMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMembresiasActionPerformed
+        this.setVisible(true);
+        Membresias ventanaMembresias = new Membresias();
+        ventanaMembresias.setVisible(true);
+    }//GEN-LAST:event_miMembresiasActionPerformed
+
+    private void miReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miReportesActionPerformed
+        this.setVisible(true);
+        Reportes ventanaReportes = new Reportes();
+        ventanaReportes.setVisible(true);
+    }//GEN-LAST:event_miReportesActionPerformed
+
+    private void btnAgMiembroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgMiembroActionPerformed
+        this.setVisible(true);
+        Agregar ventanaAgregar = new Agregar();
+        ventanaAgregar.setVisible(true);
+    }//GEN-LAST:event_btnAgMiembroActionPerformed
+
+    private void btnMiembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMiembrosActionPerformed
+        this.setVisible(true);
+        Miembros ventanaMiembros = new Miembros();
+        ventanaMiembros.setVisible(true);
+    }//GEN-LAST:event_btnMiembrosActionPerformed
+
+    private void btnRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistroActionPerformed
+        this.setVisible(true);
+        Registro ventanaRegistro = new Registro();
+        ventanaRegistro.setVisible(true);
+    }//GEN-LAST:event_btnRegistroActionPerformed
+
+    private void btnMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMembresiasActionPerformed
+        this.setVisible(true);
+        Membresias ventanaMembresias = new Membresias();
+        ventanaMembresias.setVisible(true);
+    }//GEN-LAST:event_btnMembresiasActionPerformed
+
+    private void btnReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportesActionPerformed
+        this.setVisible(true);
+        Reportes ventanaReportes = new Reportes();
+        ventanaReportes.setVisible(true);
+    }//GEN-LAST:event_btnReportesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,6 +342,24 @@ public class Home extends javax.swing.JFrame {
                 new Home().setVisible(true);
             }
         });
+    }
+
+    private void confirmarCierreVentana() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        int opcion = JOptionPane.showConfirmDialog(
+                this,
+                "¿Realmente desea cerrar la ventana?",
+                "Confirmar cierre",
+                JOptionPane.YES_NO_OPTION);
+        if (opcion == JOptionPane.YES_OPTION) {
+            dispose();
+        } else {
+            setDefaultCloseOperation(Home.DO_NOTHING_ON_CLOSE);
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

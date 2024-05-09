@@ -89,7 +89,7 @@ public class Registro extends javax.swing.JFrame {
         lblIDMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblIDMiem.setText("-");
         paneBgRegistro.add(lblIDMiem);
-        lblIDMiem.setBounds(130, 190, 550, 33);
+        lblIDMiem.setBounds(130, 190, 500, 33);
 
         lblID.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblID.setForeground(new java.awt.Color(255, 255, 255));
@@ -103,7 +103,7 @@ public class Registro extends javax.swing.JFrame {
         lblNombreMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblNombreMiem.setText("-");
         paneBgRegistro.add(lblNombreMiem);
-        lblNombreMiem.setBounds(210, 240, 470, 33);
+        lblNombreMiem.setBounds(210, 240, 420, 33);
 
         lblNombre.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
@@ -124,7 +124,7 @@ public class Registro extends javax.swing.JFrame {
         lblApellidosMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblApellidosMiem.setText("-");
         paneBgRegistro.add(lblApellidosMiem);
-        lblApellidosMiem.setBounds(230, 290, 450, 33);
+        lblApellidosMiem.setBounds(230, 290, 400, 33);
 
         lblVencimiento.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblVencimiento.setForeground(new java.awt.Color(255, 255, 255));
@@ -138,7 +138,7 @@ public class Registro extends javax.swing.JFrame {
         lblFechaVen.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblFechaVen.setText("-");
         paneBgRegistro.add(lblFechaVen);
-        lblFechaVen.setBounds(290, 450, 920, 40);
+        lblFechaVen.setBounds(290, 450, 560, 40);
 
         separator.setOrientation(javax.swing.SwingConstants.VERTICAL);
         paneBgRegistro.add(separator);
