@@ -15,6 +15,9 @@ public class Membresias extends javax.swing.JFrame {
      */
     public Membresias() {
         initComponents();
+        setTitle("Membresias");
+        setDefaultCloseOperation(Membresias.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**

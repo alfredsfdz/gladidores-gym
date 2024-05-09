@@ -15,6 +15,9 @@ public class Reportes extends javax.swing.JFrame {
      */
     public Reportes() {
         initComponents();
+        setTitle("Reportes");
+        setDefaultCloseOperation(Reportes.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**

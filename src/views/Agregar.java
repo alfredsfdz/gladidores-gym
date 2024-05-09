@@ -29,7 +29,7 @@ public class Agregar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        paneBgHome = new javax.swing.JPanel();
+        paneBgAgr = new javax.swing.JPanel();
         paneBotones = new javax.swing.JPanel();
         miAgMiembro = new javax.swing.JButton();
         miMiembros = new javax.swing.JButton();
@@ -51,12 +51,12 @@ public class Agregar extends javax.swing.JFrame {
         btnAgregar = new javax.swing.JButton();
         btnTomar = new javax.swing.JButton();
         btnElegir = new javax.swing.JButton();
-        lblScratchAgregar = new javax.swing.JLabel();
+        lblScratchAgr = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        paneBgHome.setBackground(new java.awt.Color(29, 29, 29));
-        paneBgHome.setLayout(null);
+        paneBgAgr.setBackground(new java.awt.Color(29, 29, 29));
+        paneBgAgr.setLayout(null);
 
         paneBotones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -70,27 +70,47 @@ public class Agregar extends javax.swing.JFrame {
         miMiembros.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMiembros.setForeground(new java.awt.Color(255, 255, 255));
         miMiembros.setText("Miembros");
+        miMiembros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMiembrosActionPerformed(evt);
+            }
+        });
         paneBotones.add(miMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 160, 30));
 
         miRegistro.setBackground(new java.awt.Color(0, 0, 0));
         miRegistro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miRegistro.setForeground(new java.awt.Color(255, 255, 255));
-        miRegistro.setText("Registro QR");
+        miRegistro.setText("Registro");
+        miRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miRegistroActionPerformed(evt);
+            }
+        });
         paneBotones.add(miRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 160, 30));
 
         miMembresias.setBackground(new java.awt.Color(0, 0, 0));
         miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMembresias.setForeground(new java.awt.Color(255, 255, 255));
         miMembresias.setText("Membresias");
+        miMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMembresiasActionPerformed(evt);
+            }
+        });
         paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 160, 30));
 
         miReportes.setBackground(new java.awt.Color(0, 0, 0));
         miReportes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miReportes.setForeground(new java.awt.Color(255, 255, 255));
         miReportes.setText("Reportes");
+        miReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miReportesActionPerformed(evt);
+            }
+        });
         paneBotones.add(miReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 160, 30));
 
-        paneBgHome.add(paneBotones);
+        paneBgAgr.add(paneBotones);
         paneBotones.setBounds(0, 0, 800, 30);
 
         javax.swing.GroupLayout paneFotoLayout = new javax.swing.GroupLayout(paneFoto);
@@ -104,7 +124,7 @@ public class Agregar extends javax.swing.JFrame {
             .addComponent(lblFoto, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE)
         );
 
-        paneBgHome.add(paneFoto);
+        paneBgAgr.add(paneFoto);
         paneFoto.setBounds(460, 70, 250, 250);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon.png"))); // NOI18N
@@ -113,88 +133,88 @@ public class Agregar extends javax.swing.JFrame {
                 lblBackMouseClicked(evt);
             }
         });
-        paneBgHome.add(lblBack);
+        paneBgAgr.add(lblBack);
         lblBack.setBounds(30, 52, 35, 35);
 
         lblNombre.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setText("Nombre");
-        paneBgHome.add(lblNombre);
+        paneBgAgr.add(lblNombre);
         lblNombre.setBounds(90, 70, 70, 17);
 
         txtNombres.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        paneBgHome.add(txtNombres);
+        paneBgAgr.add(txtNombres);
         txtNombres.setBounds(90, 90, 300, 30);
 
         lblApellidos.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblApellidos.setForeground(new java.awt.Color(255, 255, 255));
         lblApellidos.setText("Apellidos");
-        paneBgHome.add(lblApellidos);
+        paneBgAgr.add(lblApellidos);
         lblApellidos.setBounds(90, 130, 70, 17);
 
         txtApellidos.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        paneBgHome.add(txtApellidos);
+        paneBgAgr.add(txtApellidos);
         txtApellidos.setBounds(90, 150, 300, 30);
 
         lblNumero.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblNumero.setForeground(new java.awt.Color(255, 255, 255));
         lblNumero.setText("Número de teléfono");
-        paneBgHome.add(lblNumero);
+        paneBgAgr.add(lblNumero);
         lblNumero.setBounds(90, 190, 140, 17);
 
         txtNumero.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        paneBgHome.add(txtNumero);
+        paneBgAgr.add(txtNumero);
         txtNumero.setBounds(90, 210, 300, 30);
 
         lblNac.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblNac.setForeground(new java.awt.Color(255, 255, 255));
         lblNac.setText("Fecha de nacimiento");
-        paneBgHome.add(lblNac);
+        paneBgAgr.add(lblNac);
         lblNac.setBounds(90, 250, 140, 17);
-        paneBgHome.add(dateNac);
+        paneBgAgr.add(dateNac);
         dateNac.setBounds(90, 270, 110, 30);
 
         btnLimpiar.setBackground(new java.awt.Color(0, 0, 0));
         btnLimpiar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
         btnLimpiar.setText("Limpiar campos");
-        paneBgHome.add(btnLimpiar);
+        paneBgAgr.add(btnLimpiar);
         btnLimpiar.setBounds(90, 380, 140, 30);
 
         btnAgregar.setBackground(new java.awt.Color(0, 0, 0));
         btnAgregar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
         btnAgregar.setText("Agregar");
-        paneBgHome.add(btnAgregar);
+        paneBgAgr.add(btnAgregar);
         btnAgregar.setBounds(250, 380, 140, 30);
 
         btnTomar.setBackground(new java.awt.Color(0, 0, 0));
         btnTomar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnTomar.setForeground(new java.awt.Color(255, 255, 255));
         btnTomar.setText("Tomar foto");
-        paneBgHome.add(btnTomar);
+        paneBgAgr.add(btnTomar);
         btnTomar.setBounds(460, 330, 120, 30);
 
         btnElegir.setBackground(new java.awt.Color(0, 0, 0));
         btnElegir.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnElegir.setForeground(new java.awt.Color(255, 255, 255));
         btnElegir.setText("Editar");
-        paneBgHome.add(btnElegir);
+        paneBgAgr.add(btnElegir);
         btnElegir.setBounds(590, 330, 120, 30);
 
-        lblScratchAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
-        paneBgHome.add(lblScratchAgregar);
-        lblScratchAgregar.setBounds(0, 30, 800, 420);
+        lblScratchAgr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgAgr.add(lblScratchAgr);
+        lblScratchAgr.setBounds(0, 30, 800, 420);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(paneBgHome, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(paneBgAgr, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(paneBgHome, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(paneBgAgr, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
 
         pack();
@@ -204,6 +224,30 @@ public class Agregar extends javax.swing.JFrame {
     private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
         this.dispose();
     }//GEN-LAST:event_lblBackMouseClicked
+
+    private void miMiembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMiembrosActionPerformed
+        this.dispose();
+        Miembros ventanaMiembros = new Miembros();
+        ventanaMiembros.setVisible(true);
+    }//GEN-LAST:event_miMiembrosActionPerformed
+
+    private void miRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miRegistroActionPerformed
+        this.dispose();
+        Registro ventanaRegistro = new Registro();
+        ventanaRegistro.setVisible(true);
+    }//GEN-LAST:event_miRegistroActionPerformed
+
+    private void miMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMembresiasActionPerformed
+        this.dispose();
+        Membresias ventanaMembresias = new Membresias();
+        ventanaMembresias.setVisible(true);
+    }//GEN-LAST:event_miMembresiasActionPerformed
+
+    private void miReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miReportesActionPerformed
+        this.dispose();
+        Reportes ventanaReportes = new Reportes();
+        ventanaReportes.setVisible(true);
+    }//GEN-LAST:event_miReportesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,13 +296,13 @@ public class Agregar extends javax.swing.JFrame {
     private javax.swing.JLabel lblNac;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNumero;
-    private javax.swing.JLabel lblScratchAgregar;
+    private javax.swing.JLabel lblScratchAgr;
     private javax.swing.JButton miAgMiembro;
     private javax.swing.JButton miMembresias;
     private javax.swing.JButton miMiembros;
     private javax.swing.JButton miRegistro;
     private javax.swing.JButton miReportes;
-    private javax.swing.JPanel paneBgHome;
+    private javax.swing.JPanel paneBgAgr;
     private javax.swing.JPanel paneBotones;
     private javax.swing.JPanel paneFoto;
     private javax.swing.JTextField txtApellidos;

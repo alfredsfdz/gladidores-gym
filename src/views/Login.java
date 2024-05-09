@@ -43,15 +43,14 @@ public class Login extends javax.swing.JFrame {
         paneBg.setBackground(new java.awt.Color(29, 29, 29));
         paneBg.setLayout(null);
 
-        lblIniciar.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        lblIniciar.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         lblIniciar.setForeground(new java.awt.Color(255, 255, 255));
         lblIniciar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblIniciar.setText("INICIAR SESION");
         paneBg.add(lblIniciar);
-        lblIniciar.setBounds(0, 290, 800, 22);
+        lblIniciar.setBounds(0, 280, 800, 22);
 
-        txtUsuario.setBackground(new java.awt.Color(229, 229, 229));
-        txtUsuario.setFont(new java.awt.Font("Roboto Light", 1, 14)); // NOI18N
+        txtUsuario.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(51, 51, 51));
         txtUsuario.setText("Usuario");
         txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -62,7 +61,6 @@ public class Login extends javax.swing.JFrame {
         paneBg.add(txtUsuario);
         txtUsuario.setBounds(210, 320, 360, 30);
 
-        txtContrasena.setBackground(new java.awt.Color(229, 229, 229));
         txtContrasena.setForeground(new java.awt.Color(51, 51, 51));
         txtContrasena.setText("Contraseña");
         txtContrasena.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -79,7 +77,7 @@ public class Login extends javax.swing.JFrame {
         txtContrasena.setBounds(210, 360, 360, 30);
 
         btnEntrar.setBackground(new java.awt.Color(0, 0, 0));
-        btnEntrar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnEntrar.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         btnEntrar.setForeground(new java.awt.Color(255, 255, 255));
         btnEntrar.setText("ENTRAR");
         btnEntrar.addActionListener(new java.awt.event.ActionListener() {
@@ -94,7 +92,7 @@ public class Login extends javax.swing.JFrame {
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gladiadores_logo.png"))); // NOI18N
         lblLogo.setPreferredSize(new java.awt.Dimension(300, 300));
         paneBg.add(lblLogo);
-        lblLogo.setBounds(0, 70, 800, 240);
+        lblLogo.setBounds(0, 60, 800, 240);
 
         paneScratch.setForeground(new java.awt.Color(255, 255, 255));
         paneScratch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratch.png"))); // NOI18N

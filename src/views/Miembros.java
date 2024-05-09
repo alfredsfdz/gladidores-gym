@@ -15,6 +15,9 @@ public class Miembros extends javax.swing.JFrame {
      */
     public Miembros() {
         initComponents();
+        setTitle("Miembros");
+        setDefaultCloseOperation(Miembros.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -26,21 +29,202 @@ public class Miembros extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        paneBgMiem = new javax.swing.JPanel();
+        paneBotones = new javax.swing.JPanel();
+        miAgMiembro = new javax.swing.JButton();
+        miMiembros = new javax.swing.JButton();
+        miRegistro = new javax.swing.JButton();
+        miMembresias = new javax.swing.JButton();
+        miReportes = new javax.swing.JButton();
+        lblLogo = new javax.swing.JLabel();
+        lblBack = new javax.swing.JLabel();
+        btnMembresias = new javax.swing.JButton();
+        btnEliminar = new javax.swing.JButton();
+        btnEditar = new javax.swing.JButton();
+        lblBuscar = new javax.swing.JLabel();
+        txtBuscar = new javax.swing.JTextField();
+        btnBuscar = new javax.swing.JButton();
+        scrolltMiembros = new javax.swing.JScrollPane();
+        tableMiembros = new javax.swing.JTable();
+        lblScratchMiem = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        paneBgMiem.setBackground(new java.awt.Color(29, 29, 29));
+        paneBgMiem.setLayout(null);
+
+        paneBotones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        miAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
+        miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
+        miAgMiembro.setText("Agregar miembro");
+        miAgMiembro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miAgMiembroActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 256, 30));
+
+        miMiembros.setBackground(new java.awt.Color(0, 0, 0));
+        miMiembros.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMiembros.setForeground(new java.awt.Color(255, 255, 255));
+        miMiembros.setText("Miembros");
+        paneBotones.add(miMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(256, 0, 256, 30));
+
+        miRegistro.setBackground(new java.awt.Color(0, 0, 0));
+        miRegistro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        miRegistro.setText("Registro");
+        miRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miRegistroActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(512, 0, 256, 30));
+
+        miMembresias.setBackground(new java.awt.Color(0, 0, 0));
+        miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMembresias.setForeground(new java.awt.Color(255, 255, 255));
+        miMembresias.setText("Membresias");
+        miMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMembresiasActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(768, 0, 256, 30));
+
+        miReportes.setBackground(new java.awt.Color(0, 0, 0));
+        miReportes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miReportes.setForeground(new java.awt.Color(255, 255, 255));
+        miReportes.setText("Reportes");
+        miReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miReportesActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(1024, 0, 256, 30));
+
+        paneBgMiem.add(paneBotones);
+        paneBotones.setBounds(0, 0, 1280, 30);
+
+        lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gladiadores_logo_small.png"))); // NOI18N
+        paneBgMiem.add(lblLogo);
+        lblLogo.setBounds(1100, 100, 150, 100);
+
+        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon_big.png"))); // NOI18N
+        lblBack.setPreferredSize(new java.awt.Dimension(55, 55));
+        lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBackMouseClicked(evt);
+            }
+        });
+        paneBgMiem.add(lblBack);
+        lblBack.setBounds(30, 50, 55, 55);
+
+        btnMembresias.setBackground(new java.awt.Color(0, 0, 0));
+        btnMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnMembresias.setForeground(new java.awt.Color(255, 255, 255));
+        btnMembresias.setText("Membresías");
+        paneBgMiem.add(btnMembresias);
+        btnMembresias.setBounds(350, 130, 140, 30);
+
+        btnEliminar.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminar.setText("Eliminar");
+        paneBgMiem.add(btnEliminar);
+        btnEliminar.setBounds(190, 130, 140, 30);
+
+        btnEditar.setBackground(new java.awt.Color(0, 0, 0));
+        btnEditar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditar.setText("Editar");
+        paneBgMiem.add(btnEditar);
+        btnEditar.setBounds(30, 130, 140, 30);
+
+        lblBuscar.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
+        lblBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        lblBuscar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/serch_icon.png"))); // NOI18N
+        paneBgMiem.add(lblBuscar);
+        lblBuscar.setBounds(30, 180, 30, 30);
+
+        txtBuscar.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        txtBuscar.setText("Buscar miembro");
+        paneBgMiem.add(txtBuscar);
+        txtBuscar.setBounds(70, 180, 570, 30);
+
+        btnBuscar.setBackground(new java.awt.Color(0, 0, 0));
+        btnBuscar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnBuscar.setForeground(new java.awt.Color(255, 255, 255));
+        btnBuscar.setText("Buscar");
+        paneBgMiem.add(btnBuscar);
+        btnBuscar.setBounds(660, 180, 140, 30);
+
+        tableMiembros.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Nombre", "Apellidos", "Número de teléfono", "Fecha de nacimiento"
+            }
+        ));
+        scrolltMiembros.setViewportView(tableMiembros);
+
+        paneBgMiem.add(scrolltMiembros);
+        scrolltMiembros.setBounds(30, 232, 1220, 460);
+
+        lblScratchMiem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgMiem.add(lblScratchMiem);
+        lblScratchMiem.setBounds(0, 30, 1280, 690);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(paneBgMiem, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(paneBgMiem, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void miAgMiembroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAgMiembroActionPerformed
+        this.dispose();
+        Agregar ventanaAgregar = new Agregar();
+        ventanaAgregar.setVisible(true);
+    }//GEN-LAST:event_miAgMiembroActionPerformed
+
+    private void miRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miRegistroActionPerformed
+        this.dispose();
+        Registro ventanaRegistro = new Registro();
+        ventanaRegistro.setVisible(true);
+    }//GEN-LAST:event_miRegistroActionPerformed
+
+    private void miMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMembresiasActionPerformed
+        this.dispose();
+        Membresias ventanaMembresias = new Membresias();
+        ventanaMembresias.setVisible(true);
+    }//GEN-LAST:event_miMembresiasActionPerformed
+
+    private void miReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miReportesActionPerformed
+        this.dispose();
+        Reportes ventanaReportes = new Reportes();
+        ventanaReportes.setVisible(true);
+    }//GEN-LAST:event_miReportesActionPerformed
+
+    private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
+        this.dispose();
+    }//GEN-LAST:event_lblBackMouseClicked
 
     /**
      * @param args the command line arguments
@@ -78,5 +262,23 @@ public class Miembros extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBuscar;
+    private javax.swing.JButton btnEditar;
+    private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnMembresias;
+    private javax.swing.JLabel lblBack;
+    private javax.swing.JLabel lblBuscar;
+    private javax.swing.JLabel lblLogo;
+    private javax.swing.JLabel lblScratchMiem;
+    private javax.swing.JButton miAgMiembro;
+    private javax.swing.JButton miMembresias;
+    private javax.swing.JButton miMiembros;
+    private javax.swing.JButton miRegistro;
+    private javax.swing.JButton miReportes;
+    private javax.swing.JPanel paneBgMiem;
+    private javax.swing.JPanel paneBotones;
+    private javax.swing.JScrollPane scrolltMiembros;
+    private javax.swing.JTable tableMiembros;
+    private javax.swing.JTextField txtBuscar;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,6 +16,8 @@ public class Registro extends javax.swing.JFrame {
     public Registro() {
         initComponents();
         setTitle("Registro");
+        setDefaultCloseOperation(Registro.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -27,7 +29,7 @@ public class Registro extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        paneBgRegistro = new javax.swing.JPanel();
+        paneBgReg = new javax.swing.JPanel();
         paneQR = new javax.swing.JPanel();
         paneFoto = new javax.swing.JPanel();
         lblLogo = new javax.swing.JLabel();
@@ -45,12 +47,12 @@ public class Registro extends javax.swing.JFrame {
         lblEstadoMem = new javax.swing.JLabel();
         lblHora = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
-        lblScratchtwo = new javax.swing.JLabel();
+        lblScratchReg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        paneBgRegistro.setBackground(new java.awt.Color(29, 29, 29));
-        paneBgRegistro.setLayout(null);
+        paneBgReg.setBackground(new java.awt.Color(29, 29, 29));
+        paneBgReg.setLayout(null);
 
         javax.swing.GroupLayout paneQRLayout = new javax.swing.GroupLayout(paneQR);
         paneQR.setLayout(paneQRLayout);
@@ -63,7 +65,7 @@ public class Registro extends javax.swing.JFrame {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        paneBgRegistro.add(paneQR);
+        paneBgReg.add(paneQR);
         paneQR.setBounds(910, 190, 300, 300);
 
         javax.swing.GroupLayout paneFotoLayout = new javax.swing.GroupLayout(paneFoto);
@@ -77,73 +79,73 @@ public class Registro extends javax.swing.JFrame {
             .addGap(0, 210, Short.MAX_VALUE)
         );
 
-        paneBgRegistro.add(paneFoto);
+        paneBgReg.add(paneFoto);
         paneFoto.setBounds(640, 190, 210, 210);
 
         lblLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/gladiadores_logo_small.png"))); // NOI18N
-        paneBgRegistro.add(lblLogo);
+        paneBgReg.add(lblLogo);
         lblLogo.setBounds(1060, 50, 150, 100);
 
         lblIDMiem.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblIDMiem.setForeground(new java.awt.Color(255, 255, 255));
         lblIDMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblIDMiem.setText("-");
-        paneBgRegistro.add(lblIDMiem);
+        paneBgReg.add(lblIDMiem);
         lblIDMiem.setBounds(130, 190, 500, 33);
 
         lblID.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblID.setForeground(new java.awt.Color(255, 255, 255));
         lblID.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblID.setText("ID:");
-        paneBgRegistro.add(lblID);
+        paneBgReg.add(lblID);
         lblID.setBounds(70, 190, 40, 33);
 
         lblNombreMiem.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblNombreMiem.setForeground(new java.awt.Color(255, 255, 255));
         lblNombreMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblNombreMiem.setText("-");
-        paneBgRegistro.add(lblNombreMiem);
+        paneBgReg.add(lblNombreMiem);
         lblNombreMiem.setBounds(210, 240, 420, 33);
 
         lblNombre.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblNombre.setForeground(new java.awt.Color(255, 255, 255));
         lblNombre.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblNombre.setText("Nombre:");
-        paneBgRegistro.add(lblNombre);
+        paneBgReg.add(lblNombre);
         lblNombre.setBounds(70, 240, 120, 33);
 
         lblApellidos.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblApellidos.setForeground(new java.awt.Color(255, 255, 255));
         lblApellidos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblApellidos.setText("Apellidos:");
-        paneBgRegistro.add(lblApellidos);
+        paneBgReg.add(lblApellidos);
         lblApellidos.setBounds(70, 290, 140, 33);
 
         lblApellidosMiem.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblApellidosMiem.setForeground(new java.awt.Color(255, 255, 255));
         lblApellidosMiem.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblApellidosMiem.setText("-");
-        paneBgRegistro.add(lblApellidosMiem);
+        paneBgReg.add(lblApellidosMiem);
         lblApellidosMiem.setBounds(230, 290, 400, 33);
 
         lblVencimiento.setFont(new java.awt.Font("Roboto Black", 1, 28)); // NOI18N
         lblVencimiento.setForeground(new java.awt.Color(255, 255, 255));
         lblVencimiento.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblVencimiento.setText("Vencimiento:");
-        paneBgRegistro.add(lblVencimiento);
+        paneBgReg.add(lblVencimiento);
         lblVencimiento.setBounds(80, 450, 190, 40);
 
         lblFechaVen.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblFechaVen.setForeground(new java.awt.Color(255, 255, 255));
         lblFechaVen.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblFechaVen.setText("-");
-        paneBgRegistro.add(lblFechaVen);
+        paneBgReg.add(lblFechaVen);
         lblFechaVen.setBounds(290, 450, 560, 40);
 
         separator.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        paneBgRegistro.add(separator);
+        paneBgReg.add(separator);
         separator.setBounds(880, 190, 20, 340);
-        paneBgRegistro.add(separator1);
+        paneBgReg.add(separator1);
         separator1.setBounds(70, 530, 1140, 20);
 
         paneVencimiento.setBackground(new java.awt.Color(0, 0, 0));
@@ -165,36 +167,36 @@ public class Registro extends javax.swing.JFrame {
             .addComponent(lblEstadoMem, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
         );
 
-        paneBgRegistro.add(paneVencimiento);
+        paneBgReg.add(paneVencimiento);
         paneVencimiento.setBounds(70, 560, 1140, 60);
 
         lblHora.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblHora.setForeground(new java.awt.Color(255, 255, 255));
         lblHora.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblHora.setText("00:00:00");
-        paneBgRegistro.add(lblHora);
+        paneBgReg.add(lblHora);
         lblHora.setBounds(1060, 640, 140, 33);
 
         lblFecha.setFont(new java.awt.Font("Roboto", 0, 28)); // NOI18N
         lblFecha.setForeground(new java.awt.Color(255, 255, 255));
         lblFecha.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblFecha.setText("DD/MM/YYYY");
-        paneBgRegistro.add(lblFecha);
+        paneBgReg.add(lblFecha);
         lblFecha.setBounds(70, 640, 210, 33);
 
-        lblScratchtwo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
-        paneBgRegistro.add(lblScratchtwo);
-        lblScratchtwo.setBounds(0, 0, 1280, 720);
+        lblScratchReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgReg.add(lblScratchReg);
+        lblScratchReg.setBounds(0, 0, 1280, 720);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(paneBgRegistro, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
+            .addComponent(paneBgReg, javax.swing.GroupLayout.DEFAULT_SIZE, 1280, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(paneBgRegistro, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
+            .addComponent(paneBgReg, javax.swing.GroupLayout.DEFAULT_SIZE, 723, Short.MAX_VALUE)
         );
 
         pack();
@@ -249,9 +251,9 @@ public class Registro extends javax.swing.JFrame {
     private javax.swing.JLabel lblLogo;
     private javax.swing.JLabel lblNombre;
     private javax.swing.JLabel lblNombreMiem;
-    private javax.swing.JLabel lblScratchtwo;
+    private javax.swing.JLabel lblScratchReg;
     private javax.swing.JLabel lblVencimiento;
-    private javax.swing.JPanel paneBgRegistro;
+    private javax.swing.JPanel paneBgReg;
     private javax.swing.JPanel paneFoto;
     private javax.swing.JPanel paneQR;
     private javax.swing.JPanel paneVencimiento;
