@@ -148,7 +148,7 @@ public class Agregar extends javax.swing.JFrame {
 
         lblApellidos.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblApellidos.setForeground(new java.awt.Color(255, 255, 255));
-        lblApellidos.setText("Apellido(s)");
+        lblApellidos.setText("Apellidos");
         paneBgAgr.add(lblApellidos);
         lblApellidos.setBounds(90, 130, 80, 17);
 
