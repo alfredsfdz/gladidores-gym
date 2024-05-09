@@ -61,6 +61,11 @@ public class Membresias extends javax.swing.JFrame {
         miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
         miAgMiembro.setText("Agregar miembro");
+        miAgMiembro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miAgMiembroActionPerformed(evt);
+            }
+        });
         paneBotones.add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 160, 30));
 
         miMiembros.setBackground(new java.awt.Color(0, 0, 0));
@@ -89,11 +94,6 @@ public class Membresias extends javax.swing.JFrame {
         miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMembresias.setForeground(new java.awt.Color(255, 255, 255));
         miMembresias.setText("Membresias");
-        miMembresias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                miMembresiasActionPerformed(evt);
-            }
-        });
         paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 160, 30));
 
         miReportes.setBackground(new java.awt.Color(0, 0, 0));
@@ -216,12 +216,6 @@ public class Membresias extends javax.swing.JFrame {
         ventanaRegistro.setVisible(true);
     }//GEN-LAST:event_miRegistroActionPerformed
 
-    private void miMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMembresiasActionPerformed
-        this.dispose();
-        Membresias ventanaMembresias = new Membresias();
-        ventanaMembresias.setVisible(true);
-    }//GEN-LAST:event_miMembresiasActionPerformed
-
     private void miReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miReportesActionPerformed
         this.dispose();
         Reportes ventanaReportes = new Reportes();
@@ -231,6 +225,12 @@ public class Membresias extends javax.swing.JFrame {
     private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
         this.dispose();
     }//GEN-LAST:event_lblBackMouseClicked
+
+    private void miAgMiembroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAgMiembroActionPerformed
+        this.dispose();
+        Agregar ventanaAgregar = new Agregar();
+        ventanaAgregar.setVisible(true);
+    }//GEN-LAST:event_miAgMiembroActionPerformed
 
     /**
      * @param args the command line arguments
