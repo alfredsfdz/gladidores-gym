@@ -148,9 +148,9 @@ public class Agregar extends javax.swing.JFrame {
 
         lblApellidos.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblApellidos.setForeground(new java.awt.Color(255, 255, 255));
-        lblApellidos.setText("Apellidos");
+        lblApellidos.setText("Apellido(s)");
         paneBgAgr.add(lblApellidos);
-        lblApellidos.setBounds(90, 130, 70, 17);
+        lblApellidos.setBounds(90, 130, 80, 17);
 
         txtApellidos.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         paneBgAgr.add(txtApellidos);
@@ -181,24 +181,22 @@ public class Agregar extends javax.swing.JFrame {
         paneBgAgr.add(btnLimpiar);
         btnLimpiar.setBounds(90, 380, 140, 30);
 
-        btnAgregar.setBackground(new java.awt.Color(0, 0, 0));
+        btnAgregar.setBackground(new java.awt.Color(0, 51, 51));
         btnAgregar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregar.setText("Agregar");
+        btnAgregar.setText("Agregar miembro");
         paneBgAgr.add(btnAgregar);
-        btnAgregar.setBounds(250, 380, 140, 30);
+        btnAgregar.setBounds(250, 380, 150, 30);
 
-        btnTomar.setBackground(new java.awt.Color(0, 0, 0));
         btnTomar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnTomar.setForeground(new java.awt.Color(255, 255, 255));
         btnTomar.setText("Tomar foto");
         paneBgAgr.add(btnTomar);
         btnTomar.setBounds(460, 330, 120, 30);
 
-        btnElegir.setBackground(new java.awt.Color(0, 0, 0));
+        btnElegir.setBackground(new java.awt.Color(0, 0, 51));
         btnElegir.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnElegir.setForeground(new java.awt.Color(255, 255, 255));
-        btnElegir.setText("Editar");
+        btnElegir.setText("Elegir foto");
         paneBgAgr.add(btnElegir);
         btnElegir.setBounds(590, 330, 120, 30);
 

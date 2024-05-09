@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package views;
 
-/**
- *
- * @author Alfred-PC
- */
 public class Miembros extends javax.swing.JFrame {
 
     /**
@@ -114,7 +106,6 @@ public class Miembros extends javax.swing.JFrame {
         lblLogo.setBounds(1100, 100, 150, 100);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon_big.png"))); // NOI18N
-        lblBack.setPreferredSize(new java.awt.Dimension(55, 55));
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 lblBackMouseClicked(evt);
@@ -123,14 +114,12 @@ public class Miembros extends javax.swing.JFrame {
         paneBgMiem.add(lblBack);
         lblBack.setBounds(30, 50, 55, 55);
 
-        btnMembresias.setBackground(new java.awt.Color(0, 0, 0));
         btnMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnMembresias.setForeground(new java.awt.Color(255, 255, 255));
         btnMembresias.setText("Membresías");
         paneBgMiem.add(btnMembresias);
         btnMembresias.setBounds(350, 130, 140, 30);
 
-        btnEliminar.setBackground(new java.awt.Color(0, 0, 0));
+        btnEliminar.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnEliminar.setForeground(new java.awt.Color(255, 255, 255));
         btnEliminar.setText("Eliminar");
@@ -156,7 +145,7 @@ public class Miembros extends javax.swing.JFrame {
         paneBgMiem.add(txtBuscar);
         txtBuscar.setBounds(70, 180, 570, 30);
 
-        btnBuscar.setBackground(new java.awt.Color(0, 0, 0));
+        btnBuscar.setBackground(new java.awt.Color(0, 0, 51));
         btnBuscar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnBuscar.setForeground(new java.awt.Color(255, 255, 255));
         btnBuscar.setText("Buscar");

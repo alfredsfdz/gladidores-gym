@@ -15,7 +15,7 @@ public class Membresias extends javax.swing.JFrame {
      */
     public Membresias() {
         initComponents();
-        setTitle("Membresias");
+        setTitle("Membresías");
         setDefaultCloseOperation(Membresias.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
     }
@@ -29,21 +29,208 @@ public class Membresias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        paneBgAgr = new javax.swing.JPanel();
+        paneBotones = new javax.swing.JPanel();
+        miAgMiembro = new javax.swing.JButton();
+        miMiembros = new javax.swing.JButton();
+        miRegistro = new javax.swing.JButton();
+        miMembresias = new javax.swing.JButton();
+        miReportes = new javax.swing.JButton();
+        lblBack = new javax.swing.JLabel();
+        lblTipo = new javax.swing.JLabel();
+        txtTipo = new javax.swing.JTextField();
+        lblDuracion = new javax.swing.JLabel();
+        txtDuracion = new javax.swing.JTextField();
+        lblCosto = new javax.swing.JLabel();
+        txtCosto = new javax.swing.JTextField();
+        scrolltMembresias = new javax.swing.JScrollPane();
+        tableMembresias = new javax.swing.JTable();
+        btnAgregar1 = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
+        btnAgregar = new javax.swing.JButton();
+        lblScratchAgr = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        paneBgAgr.setBackground(new java.awt.Color(29, 29, 29));
+        paneBgAgr.setLayout(null);
+
+        paneBotones.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        miAgMiembro.setBackground(new java.awt.Color(0, 0, 0));
+        miAgMiembro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miAgMiembro.setForeground(new java.awt.Color(255, 255, 255));
+        miAgMiembro.setText("Agregar miembro");
+        paneBotones.add(miAgMiembro, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 160, 30));
+
+        miMiembros.setBackground(new java.awt.Color(0, 0, 0));
+        miMiembros.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMiembros.setForeground(new java.awt.Color(255, 255, 255));
+        miMiembros.setText("Miembros");
+        miMiembros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMiembrosActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miMiembros, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 160, 30));
+
+        miRegistro.setBackground(new java.awt.Color(0, 0, 0));
+        miRegistro.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miRegistro.setForeground(new java.awt.Color(255, 255, 255));
+        miRegistro.setText("Registro");
+        miRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miRegistroActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, 160, 30));
+
+        miMembresias.setBackground(new java.awt.Color(0, 0, 0));
+        miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miMembresias.setForeground(new java.awt.Color(255, 255, 255));
+        miMembresias.setText("Membresias");
+        miMembresias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miMembresiasActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 160, 30));
+
+        miReportes.setBackground(new java.awt.Color(0, 0, 0));
+        miReportes.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        miReportes.setForeground(new java.awt.Color(255, 255, 255));
+        miReportes.setText("Reportes");
+        miReportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                miReportesActionPerformed(evt);
+            }
+        });
+        paneBotones.add(miReportes, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 160, 30));
+
+        paneBgAgr.add(paneBotones);
+        paneBotones.setBounds(0, 0, 800, 30);
+
+        lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon.png"))); // NOI18N
+        lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblBackMouseClicked(evt);
+            }
+        });
+        paneBgAgr.add(lblBack);
+        lblBack.setBounds(30, 52, 35, 35);
+
+        lblTipo.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        lblTipo.setForeground(new java.awt.Color(255, 255, 255));
+        lblTipo.setText("Tipo de membresía");
+        paneBgAgr.add(lblTipo);
+        lblTipo.setBounds(90, 70, 130, 17);
+
+        txtTipo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        paneBgAgr.add(txtTipo);
+        txtTipo.setBounds(90, 90, 330, 30);
+
+        lblDuracion.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        lblDuracion.setForeground(new java.awt.Color(255, 255, 255));
+        lblDuracion.setText("Duración (cantidad de días)");
+        paneBgAgr.add(lblDuracion);
+        lblDuracion.setBounds(90, 130, 190, 17);
+
+        txtDuracion.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        paneBgAgr.add(txtDuracion);
+        txtDuracion.setBounds(90, 150, 330, 30);
+
+        lblCosto.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
+        lblCosto.setForeground(new java.awt.Color(255, 255, 255));
+        lblCosto.setText("Precio");
+        paneBgAgr.add(lblCosto);
+        lblCosto.setBounds(90, 190, 140, 17);
+
+        txtCosto.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        paneBgAgr.add(txtCosto);
+        txtCosto.setBounds(90, 210, 330, 30);
+
+        tableMembresias.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null},
+                {null},
+                {null},
+                {null}
+            },
+            new String [] {
+                "Membresias"
+            }
+        ));
+        scrolltMembresias.setViewportView(tableMembresias);
+
+        paneBgAgr.add(scrolltMembresias);
+        scrolltMembresias.setBounds(470, 70, 300, 300);
+
+        btnAgregar1.setBackground(new java.awt.Color(153, 0, 0));
+        btnAgregar1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnAgregar1.setForeground(new java.awt.Color(255, 255, 255));
+        btnAgregar1.setText("Eliminar membresía");
+        paneBgAgr.add(btnAgregar1);
+        btnAgregar1.setBounds(610, 380, 160, 30);
+
+        btnLimpiar.setBackground(new java.awt.Color(0, 0, 51));
+        btnLimpiar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnLimpiar.setForeground(new java.awt.Color(255, 255, 255));
+        btnLimpiar.setText("Actualizar");
+        paneBgAgr.add(btnLimpiar);
+        btnLimpiar.setBounds(505, 380, 95, 30);
+
+        btnAgregar.setBackground(new java.awt.Color(0, 51, 51));
+        btnAgregar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
+        btnAgregar.setText("Agregar membresia");
+        paneBgAgr.add(btnAgregar);
+        btnAgregar.setBounds(90, 380, 160, 30);
+
+        lblScratchAgr.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
+        paneBgAgr.add(lblScratchAgr);
+        lblScratchAgr.setBounds(0, 30, 800, 420);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(paneBgAgr, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(paneBgAgr, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void miMiembrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMiembrosActionPerformed
+        this.dispose();
+        Miembros ventanaMiembros = new Miembros();
+        ventanaMiembros.setVisible(true);
+    }//GEN-LAST:event_miMiembrosActionPerformed
+
+    private void miRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miRegistroActionPerformed
+        this.dispose();
+        Registro ventanaRegistro = new Registro();
+        ventanaRegistro.setVisible(true);
+    }//GEN-LAST:event_miRegistroActionPerformed
+
+    private void miMembresiasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miMembresiasActionPerformed
+        this.dispose();
+        Membresias ventanaMembresias = new Membresias();
+        ventanaMembresias.setVisible(true);
+    }//GEN-LAST:event_miMembresiasActionPerformed
+
+    private void miReportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miReportesActionPerformed
+        this.dispose();
+        Reportes ventanaReportes = new Reportes();
+        ventanaReportes.setVisible(true);
+    }//GEN-LAST:event_miReportesActionPerformed
+
+    private void lblBackMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblBackMouseClicked
+        this.dispose();
+    }//GEN-LAST:event_lblBackMouseClicked
 
     /**
      * @param args the command line arguments
@@ -81,5 +268,25 @@ public class Membresias extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAgregar;
+    private javax.swing.JButton btnAgregar1;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JLabel lblBack;
+    private javax.swing.JLabel lblCosto;
+    private javax.swing.JLabel lblDuracion;
+    private javax.swing.JLabel lblScratchAgr;
+    private javax.swing.JLabel lblTipo;
+    private javax.swing.JButton miAgMiembro;
+    private javax.swing.JButton miMembresias;
+    private javax.swing.JButton miMiembros;
+    private javax.swing.JButton miRegistro;
+    private javax.swing.JButton miReportes;
+    private javax.swing.JPanel paneBgAgr;
+    private javax.swing.JPanel paneBotones;
+    private javax.swing.JScrollPane scrolltMembresias;
+    private javax.swing.JTable tableMembresias;
+    private javax.swing.JTextField txtCosto;
+    private javax.swing.JTextField txtDuracion;
+    private javax.swing.JTextField txtTipo;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package views;
 
-/**
- *
- * @author alfre
- */
 public class Capturar extends javax.swing.JFrame {
 
     /**
@@ -55,7 +47,7 @@ public class Capturar extends javax.swing.JFrame {
         btnCapturar.setText("Capturar");
         getContentPane().add(btnCapturar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 506, 250, 64));
 
-        btnCerrar.setBackground(new java.awt.Color(0, 0, 0));
+        btnCerrar.setBackground(new java.awt.Color(153, 0, 0));
         btnCerrar.setFont(new java.awt.Font("Roboto Black", 1, 26)); // NOI18N
         btnCerrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrar.setText("Cerrar");
