@@ -184,9 +184,9 @@ public class Agregar extends javax.swing.JFrame {
         btnAgregar.setBackground(new java.awt.Color(0, 51, 51));
         btnAgregar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregar.setText("Agregar miembro");
+        btnAgregar.setText("Guardar");
         paneBgAgr.add(btnAgregar);
-        btnAgregar.setBounds(250, 380, 150, 30);
+        btnAgregar.setBounds(250, 380, 140, 30);
 
         btnTomar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnTomar.setText("Tomar foto");
