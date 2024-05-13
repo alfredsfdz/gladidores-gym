@@ -15,7 +15,7 @@ public class Usuarios extends javax.swing.JFrame {
      */
     public Usuarios() {
         initComponents();
-        setTitle("Membresías");
+        setTitle("Usuarios");
         setDefaultCloseOperation(Usuarios.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
     }

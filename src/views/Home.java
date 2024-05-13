@@ -213,6 +213,11 @@ public class Home extends javax.swing.JFrame {
         btnUsuarios.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
         btnUsuarios.setForeground(new java.awt.Color(255, 255, 255));
         btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/user_icon.png"))); // NOI18N
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuariosActionPerformed(evt);
+            }
+        });
         paneBgHome.add(btnUsuarios);
         btnUsuarios.setBounds(30, 560, 100, 100);
 
@@ -320,6 +325,12 @@ public class Home extends javax.swing.JFrame {
         ventanaReportes.setVisible(true);
     }//GEN-LAST:event_btnReportesActionPerformed
 
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
+        this.setVisible(true);
+        Usuarios ventanaUsuarios = new Usuarios();
+        ventanaUsuarios.setVisible(true);
+    }//GEN-LAST:event_btnUsuariosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -382,7 +393,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnRegistro;
     private javax.swing.JButton btnReportes;
     private javax.swing.JButton btnUsuarios;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblAgMiembro;
     private javax.swing.JLabel lblInformacion;
     private javax.swing.JLabel lblMembresias;
