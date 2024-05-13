@@ -61,7 +61,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
         lblAgMembresia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAgMembresia.setText("Membresias del miembro ");
         paneBgAgrMemb.add(lblAgMembresia);
-        lblAgMembresia.setBounds(270, 20, 260, 24);
+        lblAgMembresia.setBounds(0, 20, 800, 24);
 
         javax.swing.GroupLayout paneFotoLayout = new javax.swing.GroupLayout(paneFoto);
         paneFoto.setLayout(paneFotoLayout);

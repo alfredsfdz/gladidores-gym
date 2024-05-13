@@ -53,7 +53,7 @@ public class Pago extends javax.swing.JFrame {
         lblPagoMemb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPagoMemb.setText("Pago de membresia");
         paneBgPago.add(lblPagoMemb);
-        lblPagoMemb.setBounds(150, 20, 200, 24);
+        lblPagoMemb.setBounds(0, 20, 500, 24);
 
         btnReimprimir.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnReimprimir.setText("Reimprimir ticket");

@@ -45,7 +45,7 @@ public class Membresias extends javax.swing.JFrame {
         txtCosto = new javax.swing.JTextField();
         scrolltMembresias = new javax.swing.JScrollPane();
         tableMembresias = new javax.swing.JTable();
-        btnAgregar1 = new javax.swing.JButton();
+        btnEliminarMem = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
         btnAgregar = new javax.swing.JButton();
         lblScratchAgr = new javax.swing.JLabel();
@@ -165,12 +165,12 @@ public class Membresias extends javax.swing.JFrame {
         paneBgAgr.add(scrolltMembresias);
         scrolltMembresias.setBounds(470, 70, 300, 300);
 
-        btnAgregar1.setBackground(new java.awt.Color(153, 0, 0));
-        btnAgregar1.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
-        btnAgregar1.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregar1.setText("Eliminar membresía");
-        paneBgAgr.add(btnAgregar1);
-        btnAgregar1.setBounds(610, 380, 160, 30);
+        btnEliminarMem.setBackground(new java.awt.Color(153, 0, 0));
+        btnEliminarMem.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
+        btnEliminarMem.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarMem.setText("Eliminar membresía");
+        paneBgAgr.add(btnEliminarMem);
+        btnEliminarMem.setBounds(610, 380, 160, 30);
 
         btnLimpiar.setBackground(new java.awt.Color(0, 0, 51));
         btnLimpiar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
@@ -269,7 +269,7 @@ public class Membresias extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnAgregar1;
+    private javax.swing.JButton btnEliminarMem;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel lblBack;
     private javax.swing.JLabel lblCosto;
