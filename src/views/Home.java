@@ -48,6 +48,8 @@ public class Home extends javax.swing.JFrame {
         lblMembresias = new javax.swing.JLabel();
         btnReportes = new javax.swing.JButton();
         lblReportes = new javax.swing.JLabel();
+        btnUsuarios = new javax.swing.JButton();
+        lblUsuarios = new javax.swing.JLabel();
         btnInformacion = new javax.swing.JButton();
         lblInformacion = new javax.swing.JLabel();
         lblScratchHome = new javax.swing.JLabel();
@@ -207,19 +209,33 @@ public class Home extends javax.swing.JFrame {
         paneBgHome.add(lblReportes);
         lblReportes.setBounds(705, 582, 260, 24);
 
+        btnUsuarios.setBackground(new java.awt.Color(0, 0, 0));
+        btnUsuarios.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
+        btnUsuarios.setForeground(new java.awt.Color(255, 255, 255));
+        btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/user_icon.png"))); // NOI18N
+        paneBgHome.add(btnUsuarios);
+        btnUsuarios.setBounds(30, 560, 100, 100);
+
+        lblUsuarios.setFont(new java.awt.Font("Roboto Black", 1, 16)); // NOI18N
+        lblUsuarios.setForeground(new java.awt.Color(255, 255, 255));
+        lblUsuarios.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUsuarios.setText("Usuarios");
+        paneBgHome.add(lblUsuarios);
+        lblUsuarios.setBounds(30, 670, 100, 19);
+
         btnInformacion.setBackground(new java.awt.Color(0, 0, 0));
         btnInformacion.setFont(new java.awt.Font("Roboto Black", 1, 70)); // NOI18N
         btnInformacion.setForeground(new java.awt.Color(255, 255, 255));
         btnInformacion.setText("?");
         paneBgHome.add(btnInformacion);
-        btnInformacion.setBounds(1145, 560, 100, 100);
+        btnInformacion.setBounds(1150, 560, 100, 100);
 
         lblInformacion.setFont(new java.awt.Font("Roboto Black", 1, 16)); // NOI18N
         lblInformacion.setForeground(new java.awt.Color(255, 255, 255));
         lblInformacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblInformacion.setText("Información");
         paneBgHome.add(lblInformacion);
-        lblInformacion.setBounds(1145, 666, 100, 19);
+        lblInformacion.setBounds(1150, 670, 100, 19);
 
         lblScratchHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/scratchtwo.png"))); // NOI18N
         paneBgHome.add(lblScratchHome);
@@ -365,6 +381,8 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton btnMiembros;
     private javax.swing.JButton btnRegistro;
     private javax.swing.JButton btnReportes;
+    private javax.swing.JButton btnUsuarios;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblAgMiembro;
     private javax.swing.JLabel lblInformacion;
     private javax.swing.JLabel lblMembresias;
@@ -372,6 +390,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel lblRegistro;
     private javax.swing.JLabel lblReportes;
     private javax.swing.JLabel lblScratchHome;
+    private javax.swing.JLabel lblUsuarios;
     private javax.swing.JButton miAgMiembro;
     private javax.swing.JButton miMembresias;
     private javax.swing.JButton miMiembros;
