@@ -102,7 +102,7 @@ public class Home extends javax.swing.JFrame {
         miMembresias.setBackground(new java.awt.Color(0, 0, 0));
         miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMembresias.setForeground(new java.awt.Color(255, 255, 255));
-        miMembresias.setText("Membresias");
+        miMembresias.setText("Membresías");
         miMembresias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miMembresiasActionPerformed(evt);
@@ -188,7 +188,7 @@ public class Home extends javax.swing.JFrame {
         lblMembresias.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
         lblMembresias.setForeground(new java.awt.Color(255, 255, 255));
         lblMembresias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblMembresias.setText("Membresias");
+        lblMembresias.setText("Membresías");
         paneBgHome.add(lblMembresias);
         lblMembresias.setBounds(315, 582, 260, 24);
 

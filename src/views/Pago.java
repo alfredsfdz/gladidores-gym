@@ -51,7 +51,7 @@ public class Pago extends javax.swing.JFrame {
         lblPagoMemb.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
         lblPagoMemb.setForeground(new java.awt.Color(255, 255, 255));
         lblPagoMemb.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblPagoMemb.setText("Pago de membresia");
+        lblPagoMemb.setText("Pago de membresía");
         paneBgPago.add(lblPagoMemb);
         lblPagoMemb.setBounds(0, 20, 500, 24);
 
@@ -72,15 +72,11 @@ public class Pago extends javax.swing.JFrame {
         panePago.setLayout(panePagoLayout);
         panePagoLayout.setHorizontalGroup(
             panePagoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panePagoLayout.createSequentialGroup()
-                .addComponent(lblEstadoPago, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(lblEstadoPago, javax.swing.GroupLayout.DEFAULT_SIZE, 210, Short.MAX_VALUE)
         );
         panePagoLayout.setVerticalGroup(
             panePagoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panePagoLayout.createSequentialGroup()
-                .addComponent(lblEstadoPago, javax.swing.GroupLayout.DEFAULT_SIZE, 38, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(lblEstadoPago, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         paneBgPago.add(panePago);
@@ -126,7 +122,7 @@ public class Pago extends javax.swing.JFrame {
 
         lblTipoMemb.setFont(new java.awt.Font("Roboto Black", 1, 14)); // NOI18N
         lblTipoMemb.setForeground(new java.awt.Color(255, 255, 255));
-        lblTipoMemb.setText("Tipo de membresia");
+        lblTipoMemb.setText("Tipo de membresía");
         paneBgPago.add(lblTipoMemb);
         lblTipoMemb.setBounds(90, 120, 140, 17);
 

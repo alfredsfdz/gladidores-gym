@@ -146,7 +146,7 @@ public class Registro extends javax.swing.JFrame {
         lblEstadoMem.setFont(new java.awt.Font("Roboto Black", 1, 38)); // NOI18N
         lblEstadoMem.setForeground(new java.awt.Color(255, 255, 255));
         lblEstadoMem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblEstadoMem.setText("ESTADO MEMBRESIA");
+        lblEstadoMem.setText("ESTADO MEMBRESÍA");
 
         javax.swing.GroupLayout paneVencimientoLayout = new javax.swing.GroupLayout(paneVencimiento);
         paneVencimiento.setLayout(paneVencimientoLayout);

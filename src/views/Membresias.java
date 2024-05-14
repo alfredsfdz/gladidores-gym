@@ -93,7 +93,7 @@ public class Membresias extends javax.swing.JFrame {
         miMembresias.setBackground(new java.awt.Color(0, 0, 0));
         miMembresias.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         miMembresias.setForeground(new java.awt.Color(255, 255, 255));
-        miMembresias.setText("Membresias");
+        miMembresias.setText("Membresías");
         paneBotones.add(miMembresias, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 160, 30));
 
         miReportes.setBackground(new java.awt.Color(0, 0, 0));

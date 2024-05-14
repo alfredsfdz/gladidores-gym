@@ -53,7 +53,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="Membresias del miembro "/>
+            <Property name="text" type="java.lang.String" value="Membres&#xed;as del miembro "/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -101,8 +101,17 @@
               <Properties>
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="1" rowCount="4">
-                    <Column editable="true" title="Membresias" type="java.lang.Object"/>
+                    <Column editable="true" title="Membres&#xed;as" type="java.lang.Object"/>
                   </Table>
+                </Property>
+                <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                  <TableColumnModel selectionModel="0">
+                    <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
+                      <Title/>
+                      <Editor/>
+                      <Renderer/>
+                    </Column>
+                  </TableColumnModel>
                 </Property>
                 <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                   <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
@@ -127,10 +136,10 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="com.toedter.calendar.JDateChooser" name="dateComienzo">
+        <Component class="com.toedter.calendar.JDateChooser" name="dateInicio">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="510" y="220" width="80" height="30"/>
+              <AbsoluteConstraints x="510" y="220" width="90" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -145,11 +154,11 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Agregar membresia"/>
+            <Property name="text" type="java.lang.String" value="Agregar membres&#xed;a"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="600" y="220" width="170" height="30"/>
+              <AbsoluteConstraints x="610" y="220" width="160" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -275,7 +284,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Eliminar membresia"/>
+            <Property name="text" type="java.lang.String" value="Eliminar membres&#xed;a"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -294,7 +303,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Pagar membresia"/>
+            <Property name="text" type="java.lang.String" value="Pagar membres&#xed;a"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -319,11 +328,11 @@
                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                   <Table columnCount="6" rowCount="4">
                     <Column editable="true" title="Fecha de inicio" type="java.lang.Object"/>
-                    <Column editable="true" title="Tipo de membresia" type="java.lang.Object"/>
+                    <Column editable="true" title="Tipo de membres&#xed;a" type="java.lang.Object"/>
                     <Column editable="true" title="Vencimiento" type="java.lang.Object"/>
                     <Column editable="true" title="Precio" type="java.lang.Object"/>
                     <Column editable="true" title="Fecha de creaci&#xf3;n" type="java.lang.Object"/>
-                    <Column editable="true" title="Estado de membresia" type="java.lang.Object"/>
+                    <Column editable="true" title="Estado de membres&#xed;a" type="java.lang.Object"/>
                   </Table>
                 </Property>
                 <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">

@@ -36,7 +36,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
         scrolltMembresias = new javax.swing.JScrollPane();
         tableMembresias = new javax.swing.JTable();
         lblnicio = new javax.swing.JLabel();
-        dateComienzo = new com.toedter.calendar.JDateChooser();
+        dateInicio = new com.toedter.calendar.JDateChooser();
         btnAgregarMemb = new javax.swing.JButton();
         lblBack = new javax.swing.JLabel();
         lblID = new javax.swing.JLabel();
@@ -59,7 +59,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
         lblAgMembresia.setFont(new java.awt.Font("Roboto Black", 1, 20)); // NOI18N
         lblAgMembresia.setForeground(new java.awt.Color(255, 255, 255));
         lblAgMembresia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblAgMembresia.setText("Membresias del miembro ");
+        lblAgMembresia.setText("Membresías del miembro ");
         paneBgAgrMemb.add(lblAgMembresia);
         lblAgMembresia.setBounds(0, 20, 800, 24);
 
@@ -85,7 +85,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
                 {null}
             },
             new String [] {
-                "Membresias"
+                "Membresías"
             }
         ));
         scrolltMembresias.setViewportView(tableMembresias);
@@ -98,15 +98,15 @@ public class MembresiasMiemb extends javax.swing.JFrame {
         lblnicio.setText("Inicio:");
         paneBgAgrMemb.add(lblnicio);
         lblnicio.setBounds(460, 220, 50, 30);
-        paneBgAgrMemb.add(dateComienzo);
-        dateComienzo.setBounds(510, 220, 80, 30);
+        paneBgAgrMemb.add(dateInicio);
+        dateInicio.setBounds(510, 220, 90, 30);
 
         btnAgregarMemb.setBackground(new java.awt.Color(0, 51, 51));
         btnAgregarMemb.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnAgregarMemb.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregarMemb.setText("Agregar membresia");
+        btnAgregarMemb.setText("Agregar membresía");
         paneBgAgrMemb.add(btnAgregarMemb);
-        btnAgregarMemb.setBounds(600, 220, 170, 30);
+        btnAgregarMemb.setBounds(610, 220, 160, 30);
 
         lblBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/back_icon.png"))); // NOI18N
         lblBack.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -156,14 +156,14 @@ public class MembresiasMiemb extends javax.swing.JFrame {
         btnEliminarMemb.setBackground(new java.awt.Color(153, 0, 0));
         btnEliminarMemb.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnEliminarMemb.setForeground(new java.awt.Color(255, 255, 255));
-        btnEliminarMemb.setText("Eliminar membresia");
+        btnEliminarMemb.setText("Eliminar membresía");
         paneBgAgrMemb.add(btnEliminarMemb);
         btnEliminarMemb.setBounds(600, 280, 160, 30);
 
         btnPagarMemb.setBackground(new java.awt.Color(0, 0, 51));
         btnPagarMemb.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnPagarMemb.setForeground(new java.awt.Color(255, 255, 255));
-        btnPagarMemb.setText("Pagar membresia");
+        btnPagarMemb.setText("Pagar membresía");
         paneBgAgrMemb.add(btnPagarMemb);
         btnPagarMemb.setBounds(430, 280, 150, 30);
 
@@ -175,7 +175,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
                 {null, null, null, null, null, null}
             },
             new String [] {
-                "Fecha de inicio", "Tipo de membresia", "Vencimiento", "Precio", "Fecha de creación", "Estado de membresia"
+                "Fecha de inicio", "Tipo de membresía", "Vencimiento", "Precio", "Fecha de creación", "Estado de membresía"
             }
         ));
         scrolltRegMemb.setViewportView(tableRegistroMemb);
@@ -260,7 +260,7 @@ public class MembresiasMiemb extends javax.swing.JFrame {
     private javax.swing.JButton btnAgregarMemb;
     private javax.swing.JButton btnEliminarMemb;
     private javax.swing.JButton btnPagarMemb;
-    private com.toedter.calendar.JDateChooser dateComienzo;
+    private com.toedter.calendar.JDateChooser dateInicio;
     private javax.swing.JLabel lblAgMembresia;
     private javax.swing.JLabel lblApellidos;
     private javax.swing.JLabel lblApellidosMiemb;
