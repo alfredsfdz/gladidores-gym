@@ -46,9 +46,9 @@ public class Login extends javax.swing.JFrame {
         lblIniciar.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
         lblIniciar.setForeground(new java.awt.Color(255, 255, 255));
         lblIniciar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblIniciar.setText("INICIAR SESION");
+        lblIniciar.setText("INICIAR SESIÓN");
         paneBg.add(lblIniciar);
-        lblIniciar.setBounds(0, 280, 800, 22);
+        lblIniciar.setBounds(0, 272, 800, 30);
 
         txtUsuario.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         txtUsuario.setForeground(new java.awt.Color(51, 51, 51));

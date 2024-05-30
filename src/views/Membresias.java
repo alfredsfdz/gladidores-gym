@@ -157,7 +157,7 @@ public class Membresias extends javax.swing.JFrame {
                 {null}
             },
             new String [] {
-                "Membresias"
+                "Membresías"
             }
         ));
         scrolltMembresias.setViewportView(tableMembresias);
@@ -182,7 +182,7 @@ public class Membresias extends javax.swing.JFrame {
         btnAgregar.setBackground(new java.awt.Color(0, 51, 51));
         btnAgregar.setFont(new java.awt.Font("Roboto", 1, 14)); // NOI18N
         btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
-        btnAgregar.setText("Agregar membresia");
+        btnAgregar.setText("Agregar membresía");
         paneBgAgr.add(btnAgregar);
         btnAgregar.setBounds(90, 380, 160, 30);
 
